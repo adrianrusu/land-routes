@@ -1,4 +1,7 @@
 # LandRoutes Service
+[![Build Status](https://app.travis-ci.com/adrianrusu/land-routes.svg?branch=master)](https://app.travis-ci.com/adrianrusu/land-routes)
+[![CircleCI](https://circleci.com/gh/adrianrusu/land-routes.svg?style=shield)](https://circleci.com/gh/adrianrusu/land-routes)
+
 This is a simple Spring Boot project that is able to calculate any possible land route from one country to another
 using JSON parsed data from [mledoze/countries](https://github.com/mledoze/countries) loaded at start-time. For every
 valid request Breadth First Search is used to find the shortest path (the lowest number of other countries) needed to
