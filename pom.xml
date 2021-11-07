@@ -13,9 +13,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>land-routes</name>
 	<description>Calculates any possible land route from one country to another</description>
+
 	<properties>
 		<java.version>11</java.version>
+		<sonar.organization>adrianrusu</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
