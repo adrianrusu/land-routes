@@ -1,6 +1,9 @@
 # LandRoutes Service
 [![Build Status](https://app.travis-ci.com/adrianrusu/land-routes.svg?branch=master)](https://app.travis-ci.com/adrianrusu/land-routes)
 [![CircleCI](https://circleci.com/gh/adrianrusu/land-routes.svg?style=shield)](https://circleci.com/gh/adrianrusu/land-routes)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=adrianrusu_land-routes&metric=coverage)](https://sonarcloud.io/dashboard?id=adrianrusu_land-routes)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=adrianrusu_land-routes&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=adrianrusu_land-routes)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=adrianrusu_land-routes&metric=alert_status)](https://sonarcloud.io/dashboard?id=adrianrusu_land-routes)
 
 This is a simple Spring Boot project that is able to calculate any possible land route from one country to another
 using JSON parsed data from [mledoze/countries](https://github.com/mledoze/countries) loaded at start-time. For every
@@ -48,7 +51,7 @@ java -jar land-routes-0.0.1-SNAPSHOT.jar
 The application starts up and uses port 8080, in order to use it to check the distance between two different countries
 it exposes an endpoint at:
 
-```http request
+```
 http://localhost:8080/routing/{source}/{destination}
 ```
 
@@ -57,7 +60,7 @@ Replace the following parameters with country codes in [ISO 3166-1 alpha-3](http
 - `destination`
 
 Example:
-```http request
+```
 http://localhost:8080/routing/CZE/ITA
 ```
 
